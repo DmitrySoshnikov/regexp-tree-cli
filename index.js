@@ -8,6 +8,7 @@
 const colors = require('colors');
 const os = require('os');
 const regexpTree = require('regexp-tree');
+const TablePrinter = require('./src/TablePrinter');
 
 function enforceUnique(v) {
   return Array.isArray(v) ? v[v.length - 1] : v;
@@ -106,15 +107,15 @@ function main() {
     console.info(`${colors.bold(colors.green('✓'))} - accepting`);
 
     if (shouldPrintNFA) {
-      fa.toNFA(expression).printTransitionTable();
+      TablePrinter.printNFATable(fa.toNFA(expression));
     }
 
     if (shouldPrintDFA) {
       const dfa = fa.toDFA(expression);
-      dfa.printTransitionTable('\nDFA: Original transition table:\n');
+      TablePrinter.printDFATable(dfa, '\nDFA: Original transition table:\n');
 
       dfa.minimize();
-      dfa.printTransitionTable('\nDFA: Minimized transition table:\n');
+      TablePrinter.printDFATable(dfa, '\nDFA: Minimized transition table:\n');
     }
 
     return;
