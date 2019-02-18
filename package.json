@@ -1,6 +1,6 @@
 {
   "name": "regexp-tree-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "description": "CLI for regexp-tree package",
   "repository": "DmitrySoshnikov/regexp-tree-cli",
