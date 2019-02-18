@@ -1,0 +1,27 @@
+{
+  "name": "regexp-tree-cli",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "CLI for regexp-tree package",
+  "repository": "DmitrySoshnikov/regexp-tree-cli",
+  "homepage": "https://github.com/DmitrySoshnikov/regexp-tree-cli",
+  "bugs": "https://github.com/DmitrySoshnikov/regexp-tree-cli/issues",
+  "bin": {
+    "regexp-tree": "./bin/regexp-tree-cli"
+  },
+  "keywords": [
+    "regexp",
+    "parser",
+    "AST",
+    "tree",
+    "JavaScript",
+    "ECMAScript"
+  ],
+  "author": "Dmitry Soshnikov",
+  "dependencies": {
+    "regexp-tree": "0.1.1",
+    "cli-table3": "^0.5.1",
+    "colors": "^1.3.3",
+    "yargs": "^13.2.0"
+  }
+}

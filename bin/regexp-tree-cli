@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+/**
+ * The MIT License (MIT)
+ * Copyright (c) 2019-present Dmitry Soshnikov <dmitry.soshnikov@gmail.com>
+ */
+
+'use strict';
+
+require('../index')();
