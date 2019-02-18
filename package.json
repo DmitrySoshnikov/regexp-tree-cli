@@ -7,7 +7,7 @@
   "homepage": "https://github.com/DmitrySoshnikov/regexp-tree-cli",
   "bugs": "https://github.com/DmitrySoshnikov/regexp-tree-cli/issues",
   "bin": {
-    "regexp-tree": "./bin/regexp-tree-cli"
+    "regexp-tree-cli": "./bin/regexp-tree-cli"
   },
   "keywords": [
     "regexp",
